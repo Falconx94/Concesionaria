@@ -1,0 +1,19 @@
+.Promociones
+{
+    background-color: #1f39ad;
+}
+
+.Promociones .container .row .promo
+{
+    max-width: 27vw;
+    margin:auto;
+    background-color: rgba(0, 128, 0, 0.616);
+}
+
+.imagen-promos img
+{
+    align-items: center;
+    max-width: 20rem;
+    max-height: 15rem;
+    margin:auto;
+}
