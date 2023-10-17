@@ -10,6 +10,12 @@
     background-color: rgba(0, 128, 0, 0.616);
 }
 
+.precio
+{
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: orangered;
+}
 .imagen-promos img
 {
     align-items: center;
