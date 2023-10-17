@@ -1,3 +1,4 @@
+![LINCES](PIC_LINCES.jpeg)
 # Ecommerce Concesionaria
 #### Universidad Autonoma de Occidente
 
