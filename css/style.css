@@ -47,7 +47,14 @@ header {
     text-align: center;
 }
 
-ul {
+
+.Icon_Main img
+{
+    width: 7vw;
+}
+
+ul 
+{
     list-style: none;
     padding: 0;
 }
