@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" href="images/favicon.png">
+  <link rel="stylesheet" href="css/servicios.css">
   <link rel="stylesheet" href="css/promos.css">
   <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/style.css">
@@ -13,36 +15,15 @@
   <title>Concecionario</title>
   <link rel="stylesheet" href="images/ROYALRHILLS.jpg">
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var images = [
-            'images/PickUp.jpg',
-            'images/PickUp(2).jpg',
-            'images/PickUp(3).jpg'
-
-        ];
-        var currentIndex = 0;
-        var bannerImage = document.getElementById('banner-image');
-
-        function changeImage() {
-            bannerImage.src = images[currentIndex];
-            currentIndex = (currentIndex + 1) % images.length;
-        }
-
-        setInterval(changeImage, 2000); // Cambia la imagen cada 2 segundos (2000 milisegundos)
-    });
-</script>
-
 </head>
 
 <body>
   <header class="p-3 text-bg-dark">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
+        
+        <a href="../index.html" class="Icon_Main d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="images/ROYALRHILLS.jpg" alt="">
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -166,6 +147,12 @@
         </div>
   </section>
 
+  <section class="servicios">
+    <div class="row">
+      <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore atque neque nobis reiciendis. Obcaecati nihil corrupti, distinctio sed optio vel velit qui exercitationem ex ullam beatae, maiores modi, natus officiis?</h2>
+    </div>
+  </section>
+
   <footer>
     <div class="container text-center">
       <div class="row">
@@ -187,6 +174,25 @@
     </div>
   </footer>
   <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var images = [
+            'images/PickUp.jpg',
+            'images/PickUp(2).jpg',
+            'images/PickUp(3).jpg'
+
+        ];
+        var currentIndex = 0;
+        var bannerImage = document.getElementById('banner-image');
+
+        function changeImage() {
+            bannerImage.src = images[currentIndex];
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        setInterval(changeImage, 2000); // Cambia la imagen cada 2 segundos (2000 milisegundos)
+    });
+</script>
 </body>
 
 </html>
