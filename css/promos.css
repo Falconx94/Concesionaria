@@ -1,25 +1,32 @@
 .Promociones
 {
-    background-color: #1f39ad;
+  background-color: #ffff;
 }
 
-.Promociones .container .row .promo
-{
-    max-width: 27vw;
-    margin:auto;
-    background-color: rgba(0, 128, 0, 0.616);
+.Promociones .container .row .promo {
+  max-width: 27vw;
+  margin: auto;
+  background-color: rgba(169, 169, 169, 0.5); /* Fondo gris claro desenfocado */
+  backdrop-filter: blur(20px); /* Desenfoque del fondo */
+  min-height: 300px; /* Establecer una altura mínima para las tarjetas */
+  width: 20rem; /* Establecer un ancho fijo para las tarjetas */
 }
 
 .precio
 {
-    font-size: 1.7vw;
-    font-weight: 700;
-    color: orangered;
+  font-size: 1.7vw;
+  font-weight: 700;
+  color: black;
 }
+
+   
+  
+  
+
 .imagen-promos img
 {
-    align-items: center;
-    max-width: 20rem;
-    max-height: 15rem;
-    margin:auto;
+  align-items: center;
+  max-width: 20rem;
+  max-height: 15rem;
+  margin:auto;
 }

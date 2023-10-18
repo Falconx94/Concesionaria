@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/promos.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/us-style.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap-grid.min.css">
-    <title>Concecionario</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/promos.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/us-style.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap-grid.min.css">
+  <title>Concecionario</title>
+  <link rel="stylesheet" href="images/ROYALRHILLS.jpg">
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var images = [
+            'images/PickUp.jpg',
+            'images/PickUp(2).jpg',
+            'images/PickUp(3).jpg'
+
+        ];
+        var currentIndex = 0;
+        var bannerImage = document.getElementById('banner-image');
+
+        function changeImage() {
+            bannerImage.src = images[currentIndex];
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+
+        setInterval(changeImage, 2000); // Cambia la imagen cada 2 segundos (2000 milisegundos)
+    });
+</script>
 
 </head>
+
 <body>
   <header class="p-3 text-bg-dark">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
         </a>
-  
+
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="Caracteristicas/NOSOTROS.html" class="nav-link px-2 text-white" data-bs-toggle="">SOBRE NOSOTROS</a></li>
+          <li><a href="Caracteristicas/NOSOTROS.html" class="nav-link px-2 text-white" data-bs-toggle="">SOBRE
+              NOSOTROS</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link px-2 text-white dropdown-toggle" href="#" id="vehiculosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link px-2 text-white dropdown-toggle" href="#" id="vehiculosDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Vehículos
             </a>
             <ul class="dropdown-menu" aria-labelledby="vehiculosDropdown">
@@ -39,12 +66,13 @@
           <li><a href="#" class="nav-link px-2 text-white">Contacto</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Preguntas Frecuentes</a></li>
         </ul>
-  
+
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
           <i class="fas fa-search"></i>
-          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+            aria-label="Search">
         </form>
-  
+
         <div class="text-end">
           <button type="button" class="btn btn-outline-light me-2">Login</button>
           <button type="button" class="btn btn-warning">Sign-up</button>
@@ -56,17 +84,27 @@
   <!--Esto es el banner-->
   <section class="Portada main-banner">
     <div class="container">
-      <div class="row row-cols-2 banner">
-        <div class="col ">
-          <h3>BANNER</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum debitis maxime voluptatibus et tenetur autem reprehenderit at accusantium commodi nam cupiditate praesentium officiis, veritatis dolore eum impedit enim iste! Magni!</p>
+        <div class="row row-cols-2 banner">
+            <div class="col">
+                <h3>LO MAS NUEVO</h3>
+                <h4>PickUp</h4>
+                <p>Descubre el nuevo modelo PickUp, un automóvil que combina potencia, 
+                  estilo y comodidad. Diseñado con las últimas tecnologías para ofrecerte 
+                  una experiencia de conducción única. Con un motor eficiente que te 
+                  brinda un rendimiento excepcional en cada viaje, este PickUp está hecho
+                   para los aventureros urbanos y los amantes de la carretera. Su interior
+                    espacioso y lujoso te proporciona la comodidad que mereces, mientras 
+                    que su diseño exterior elegante y aerodinámico garantiza que siempre 
+                    te destaques en la carretera. No comprometas la calidad ni el estilo: 
+                    elige nuestro PickUp y experimenta la verdadera libertad de conducir!.
+              </p>
+            </div>
+            <div class="col imagen-banner">
+                <img id="banner-image" src="images/PickUp.jpg"alt="">
+            </div>
         </div>
-        <div class="col imagen-banner">
-          <img src="images/PickUp.jpg" alt="">
-        </div>
-      </div>
     </div>
-  </section>
+</section>
 
   <!-- Seccion de promociones-->
   <section class="Promociones">
@@ -79,60 +117,76 @@
           </div>
           <h3>Vehiculos</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolore fugiat voluptatem dolor ut perferendis sequi aliquam, unde error illum nihil architecto vitae et quidem magnam repellat, laborum repudiandae rem.
-          </p>
+            "Explora nuestra gama de vehículos de última generación, diseñados para
+            ofrecerte comodidad, estilo y rendimiento. Desde elegantes sedanes hasta
+            potentes SUVs, encuentra el vehículo perfecto para tu estilo de vida." </p>
           <p class="precio">
             $500,000.00
           </p>
-          <button class="carrito">AGREGAR A CARRITO</button>
-          <button class="comprar">Compra inmediata</button>
+          <button class="carrito gradient-button btn-user">AGREGAR A CARRITO</button>
+          <button class="comprar gradient-button btn-user">Compra inmediata</button>
         </div>
+
+
         <div class="col promo">
           <div class="imagen-promos">
             <img src="images/Suvs.jpg" alt="">
           </div>
           <h3>Subs del año</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, fugiat aliquam facilis deleniti quod voluptatum accusamus quos! Explicabo asperiores incidunt alias doloribus! Expedita amet, consequatur nostrum perspiciatis commodi dolorum quia.
-          </p>
+            "Subcompactos del Año: Pequeños en Tamaño, Grandes en Prestaciones"
+            Texto: "Conoce nuestros galardonados subcompactos del año. Estos vehículos están
+            redefiniendo la forma en que vemos la eficiencia y el estilo. Descubre tecnología
+            innovadora, manejo ágil y un diseño moderno, todo en un paquete compacto." </p>
           <p class="precio">
             $785,000.00
           </p>
-          <button class="carrito">AGREGAR A CARRITO</button>
-          <button class="comprar">Compra inmediata</button>
+          <button class="carrito gradient-button btn-user">AGREGAR A CARRITO</button>
+          <button class="comprar gradient-button btn-user">Compra inmediata</button>
         </div>
+
+
+
+
         <div class="col promo">
           <div class="imagen-promos">
             <img src="images/Hibrido.jpg" alt="">
           </div>
           <h3>Nuestro mejores HIBRIDOS</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas numquam facilis facere illum non et nesciunt deserunt? Quo laudantium iure reprehenderit facere, facilis molestiae aliquam, nobis incidunt voluptate possimus dignissimos!
-          </p>
+            "Experimenta la revolución de la conducción con nuestros mejores híbridos.
+            Estos vehículos no solo ofrecen un rendimiento excepcional, sino que también
+            son amigables con el medio ambiente. Descubre una combinación perfecta entre
+            potencia, eficiencia y ecología." </p>
           <p class="precio">
             $2,345,000.00
           </p>
-          <button class="carrito">AGREGAR A CARRITO</button>
-          <button class="comprar">Compra inmediata</button>
+          <button class="carrito gradient-button btn-user">AGREGAR A CARRITO</button>
+          <button class="comprar gradient-button btn-user">Compra inmediata</button>
         </div>
   </section>
 
   <footer>
     <div class="container text-center">
-        <div class="row">
-            <h2>Contacto</h2>
+      <div class="row">
+        <h2>Contacto</h2>
+      </div>
+      <div class="row rows-cols-2">
+        <div class="col">
+          <p>Si tienes alguna pregunta o consulta, no dudes en contactarnos:</p>
+          <p>Email: info@tuempresa.com</p>
+          <p>Teléfono: +123 456 789</p>
         </div>
-        <div class="row rows-cols-2">
-            <div class="col">
-                <p>Si tienes alguna pregunta o consulta, no dudes en contactarnos:</p>
-            </div>
-            <div class="col">
-                <p>Email: info@tuempresa.com</p>
-                <p>Teléfono: +123 456 789</p>
-            </div>
+        <div class="col">
+          <h3>Contactanos Atraves De Nuestras redes Sociales</h3>
+          <p>facebook</p>
+          <p>whatssapp</p>
+          <p>instagram</p>
         </div>
+      </div>
     </div>
   </footer>
-  <script src="../js/bootstrap/bootstrap.bundle.min.js""></script>
+  <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
