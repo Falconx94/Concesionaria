@@ -9,8 +9,11 @@
 {
     text-align: Center;
     color: rgb(32, 132, 32);
-    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    text-shadow: 2px 0 #fff, -2px 0 #ffffff, 0 2px #fff, 0 -2px #fff,
     1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
-    opacity: 100%;
-    border-color: aquamarine;
+}
+.Servicio img
+{
+    width: 150px;
+    margin: auto;
 }

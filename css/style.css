@@ -75,7 +75,11 @@ footer
     text-align: center;
 }
 
-
 .Icon_Cart img{
     width: 7vw;
+}
+
+h4
+{
+    text-align: center;
 }
