@@ -20,114 +20,117 @@
 <body>
   <header class="p-3 text-bg-dark">
     <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-            <a href="../index.html" class="Icon_Main d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                <img src="images/ROYALRHILLS.jpg" alt="">
+      <div class="header" style="width: 100%; ">
+        <a href="../index.html"
+          class="Icon_Main d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img src="images/ROYALRHILLS.jpg" alt="">
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li> <!--Nosotros-->
+            <a href="Caracteristicas/NOSOTROS.html" class="nav-link px-2 text-white" data-bs-toggle="">
+              SOBRE NOSOTROS
             </a>
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li> <!--Nosotros-->
-                    <a href="Caracteristicas/NOSOTROS.html" class="nav-link px-2 text-white" data-bs-toggle="">
-                        SOBRE NOSOTROS
-                    </a>
-                </li>
-                <li class="nav-item dropdown"><!--Vehiculos-->
-                    <a class="nav-link px-2 text-white dropdown-toggle" href="#" id="vehiculosDropdown" role="button"
+          </li>
+          <li class="nav-item dropdown"><!--Vehiculos-->
+            <a class="nav-link px-2 text-white dropdown-toggle" href="#" id="vehiculosDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Vehículos
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="vehiculosDropdown">
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                AUTOS
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                HIBRIDOS ELECTRICOS</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                            SUV'S MINIVANS
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                PICK UP'S & COMERCIALES
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li> <!--Accesorios-->
-                    <a href="#" class="nav-link px-2 text-white">
-                        Accesorios
-                    </a>
-                </li>
-                <li><!--Franquicias-->
-                    <a href="#" class="nav-link px-2 text-white">
-                        Franquicias
-                    </a>
-                </li>
-                <li><!--Soporte-->
-                    <a href="#" class="nav-link px-2 text-white">
-                        Soporte técnico
-                    </a>
-                </li>
-                <li><!--Contacto-->
-                    <a href="#" class="nav-link px-2 text-white">
-                        Contacto
-                    </a>
-                </li>
-                <li><!--QA-->
-                    <a href="#" class="nav-link px-2 text-white">
-                        Preguntas Frecuentes
-                    </a>
-                </li>
-                <li><!--Carrito-->
-                    <a href="caracteristicas/carrito.html" class="Icon_Cart d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <img src="images/carrito.png">
-          <!--<span class="cart-counter"></span>-->
-                    </a>
-                </li>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="vehiculosDropdown">
+              <li>
+                <a class="dropdown-item" href="#">
+                  AUTOS
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  HIBRIDOS ELECTRICOS
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  SUV'S MINIVANS
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  PICK UP'S & COMERCIALES
+                </a>
+              </li>
             </ul>
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                <i class="fas fa-search"></i>
-                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+          </li>
+          <li> <!--Accesorios-->
+            <a href="" class="nav-link px-2 text-white">
+              Accesorios
+            </a>
+          </li>
+          <li><!--Franquicias-->
+            <a href="#" class="nav-link px-2 text-white">
+              Franquicias
+            </a>
+          </li>
+          <li><!--Soporte-->
+            <a href="Caracteristicas/soporte.html" class="nav-link px-2 text-white">
+              Soporte técnico
+            </a>
+          </li>
+
+          <li><a href="#footer" class="nav-link px-2 text-white">Contacto</a></li>
+
+          <li><!--QA-->
+            <a href="Caracteristicas/Preguntas.html" class="nav-link px-2 text-white">
+              Preguntas Frecuentes
+            </a>
+          </li>
+          <li><!--Carrito-->
+            <a href="caracteristicas/carrito.html"
+              class="Icon_Cart d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <img src="../images/carrito.jpg">
+              <!--<span class="cart-counter"></span>-->
+            </a>
+          </li>
+        </ul>
+        <div class="text-end">
+          <!-- Botón login con redirección usando submit -->
+          <form action="LOGIN.html" method="post">
+              <button type="submit" class="btn btn-outline-light me-2">
+                  Login
+              </button>
+          </form>
+      </div>
+      
+      <div class="search">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <i class="fas fa-search"></i>
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
             aria-label="Search">
-            </form>
-            <div class="text-end">
-                <button type="button" class="btn btn-outline-light me-2">
-                    Login
-                </button>
-                <button type="button" class="btn btn-warning">
-                    Sign-up
-                </button>
-            </div>
-        </div>
+        </form>
+      </div>
     </div>
   </header>
 
   <!--Esto es el banner-->
   <section class="Portada main-banner">
     <div class="container">
-        <div class="row row-cols-2 banner">
-            <div class="col">
-                <h3>LO MAS NUEVO</h3>
-                <h4>PickUp</h4>
-                <p>Descubre el nuevo modelo PickUp, un automóvil que combina potencia, 
-                  estilo y comodidad. Diseñado con las últimas tecnologías para ofrecerte 
-                  una experiencia de conducción única. Con un motor eficiente que te 
-                  brinda un rendimiento excepcional en cada viaje, este PickUp está hecho
-                   para los aventureros urbanos y los amantes de la carretera. Su interior
-                    espacioso y lujoso te proporciona la comodidad que mereces, mientras 
-                    que su diseño exterior elegante y aerodinámico garantiza que siempre 
-                    te destaques en la carretera. No comprometas la calidad ni el estilo: 
-                    elige nuestro PickUp y experimenta la verdadera libertad de conducir!.
-              </p>
-            </div>
-            <div class="col imagen-banner">
-                <img id="banner-image" src="images/PickUp.jpg"alt="">
-            </div>
+      <div class="row row-cols-2 banner">
+        <div class="col">
+          <h3>LO MAS NUEVO</h3>
+          <h4>PickUp</h4>
+          <p>Descubre el nuevo modelo PickUp, un automóvil que combina potencia,
+            estilo y comodidad. Diseñado con las últimas tecnologías para ofrecerte
+            una experiencia de conducción única. Con un motor eficiente que te
+            brinda un rendimiento excepcional en cada viaje, este PickUp está hecho
+            para los aventureros urbanos y los amantes de la carretera. Su interior
+            espacioso y lujoso te proporciona la comodidad que mereces, mientras
+            que su diseño exterior elegante y aerodinámico garantiza que siempre
+            te destaques en la carretera. No comprometas la calidad ni el estilo:
+            elige nuestro PickUp y experimenta la verdadera libertad de conducir!.
+          </p>
         </div>
+        <div class="col imagen-banner">
+          <img id="banner-image" src="images/PickUp.jpg" alt="">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -198,33 +201,36 @@
       </div>
     </div>
     <div class="row">
-        <div class="col-Servicio">
-          <h4>
-            Cotiza
-          </h4>
-          <img src="images/cotiza.png" alt="" width="10vw" background-position="center" margin="0 auto">
-          <p >"Obtén una cotización personalizada para tu nuevo auto"</p>
-        </div>
-        <div class="col-Servicio">
-          <h4>Financiamiento</h4>
-          <img src="images/contrato.png" alt="" width="10vw" background-position="center" margin="0 auto">
-        <p>"Obtén el financiamiento que necesitas para comprar tu auto"</p>
-        </div>
-        <div class="col-Servicio">
-          <h4>Nuestras Franquicias</h4>
-          <img src="images/mapa.png" alt="" width="10vw" background-position="center" margin="0 auto">
-         <p>"Encuentra una franquicia cerca de ti"</p>
-        </div>
-        <div class="col-Servicio">
-          <h4>Cita de servicios</h4>
-          <img src="images/cita.png" alt="" width="10vw" background-position="center" margin="0 auto">
-          <p>"Programa una cita de servicios y mantén tu auto en óptimas condiciones"</p>
-
-        </div>
+      <div class="col-Servicio">
+        <h4>
+          Cotiza
+        </h4>
+        <img src="images/cotiza.png" alt="" width="10vw" background-position="center" margin="0 auto">
+        <p>"Obtén una cotización personalizada para tu nuevo auto"</p>
       </div>
+      <div class="col-Servicio">
+        <h4>Financiamiento</h4>
+        <img src="images/contrato.png" alt="" width="10vw" background-position="center" margin="0 auto">
+        <p>"Obtén el financiamiento que necesitas para comprar tu auto"</p>
+      </div>
+      <div class="col-Servicio">
+        <h4>Nuestras Franquicias</h4>
+        <img src="images/mapa.png" alt="" width="10vw" background-position="center" margin="0 auto">
+        <p>"Encuentra una franquicia cerca de ti"</p>
+      </div>
+      <div class="col-Servicio">
+        <h4>Cita de servicios</h4>
+        <img src="images/cita.png" alt="" width="10vw" background-position="center" margin="0 auto">
+        <p>"Programa una cita de servicios y mantén tu auto en óptimas condiciones"</p>
+
+      </div>
+    </div>
   </section>
 
-  <footer>
+  <nav>
+
+  </nav>
+  <footer id="footer">
     <div class="container text-center">
       <div class="row">
         <h2>Contacto</h2>
@@ -244,27 +250,31 @@
       </div>
     </div>
   </footer>
+
+
+
+
   <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-        var images = [
-            'images/PickUp.jpg',
-            'images/PickUp(2).jpg',
-            'images/PickUp(3).jpg'
+      var images = [
+        'images/PickUp.jpg',
+        'images/PickUp(2).jpg',
+        'images/PickUp(3).jpg'
 
-        ];
-        var currentIndex = 0;
-        var bannerImage = document.getElementById('banner-image');
+      ];
+      var currentIndex = 0;
+      var bannerImage = document.getElementById('banner-image');
 
-        function changeImage() {
-            bannerImage.src = images[currentIndex];
-            currentIndex = (currentIndex + 1) % images.length;
-        }
+      function changeImage() {
+        bannerImage.src = images[currentIndex];
+        currentIndex = (currentIndex + 1) % images.length;
+      }
 
-        setInterval(changeImage, 2000); // Cambia la imagen cada 2 segundos (2000 milisegundos)
+      setInterval(changeImage, 2000); // Cambia la imagen cada 2 segundos (2000 milisegundos)
     });
-</script>
-
+  </script>
+<script>"script.js"</script>
 </body>
 
 </html>

@@ -63,8 +63,6 @@
             </div>
           </header>
 
-
-
           <section class="preguntas-frecuentes clearfix">	
             <div class="preguntas-frecuentes-contenedor serif">
                 
@@ -75,7 +73,6 @@
                 <div id="search">
                     <form>
                         <input type="text" id="search-input" placeholder="Buscar preguntas...">
-                        <button type="submit" id="search-btn">Buscar</button>
                     </form>
                 </div>
 
@@ -150,9 +147,12 @@
             <label for="item16" class="accordion-item-hd"> ¿Cuál es la política de devolución de su concesionario?<span class="accordion-item-hd-cta">&#9650;</span></label>
             <div class="accordion-item-bd respuesta"><p> Por favor, consulta nuestra política de devoluciones en la sección de Términos y Condiciones de nuestro sitio web para obtener información detallada sobre las devoluciones.</p></div>
 
-                <input class="accordion-item-input" type="checkbox" name="accordion" id="item17" />
-            <label for="item17" class="accordion-item-hd"> ¿Ofrecen seguro de automóvil?<span class="accordion-item-hd-cta">&#9650;</span></label>
-            <div class="accordion-item-bd respuesta"><p> No ofrecemos seguros de automóvil directamente, pero podemos ayudarte a conectarte con compañías de seguros confiables para obtener cotizaciones.</p></div>
+            <input class="accordion-item-input" type="checkbox" name="accordion" id="item17" />
+            <label for="item17" class="accordion-item-hd">
+              ¿Ofrecen seguro de automóvil?
+              <span class="accordion-item-hd-cta">&#9650;</span>
+            </label>
+            <div class="accordion-item-bd respuesta"><p>No ofrecemos seguros de automóvil directamente, pero podemos ayudarte a conectarte con compañías de seguros confiables para obtener cotizaciones.</p></div>
 
                 <input class="accordion-item-input" type="checkbox" name="accordion" id="item18" />
             <label for="item18" class="accordion-item-hd"> ¿Puedo reservar un vehículo en su concesionario?<span class="accordion-item-hd-cta">&#9650;</span></label>
@@ -195,24 +195,45 @@
          
 </body>
 <script>
-document.addEventListener("keyup", e=>{
+// Función para buscar preguntas
+function searchQuestions(searchTerm) {
+  // Obtener los elementos de pregunta
+  const questions = document.querySelectorAll(".accordion-item-hd");
 
-if (e.target.matches("#buscador")){
+  // Ocultar todos los elementos
+  questions.forEach((question) => {
+    question.style.display = "none";
+  });
 
-  if (e.key ==="Escape")e.target.value = ""
-
-  document.querySelectorAll(".pregunta-respuesta").forEach(preguntaRespuesta =>{
-
-    if (preguntaRespuesta.querySelector(".pregunta").textContent.toLowerCase().includes(e.target.value.toLowerCase())){
-      preguntaRespuesta.classList.remove("filtro")
-    }else{
-      preguntaRespuesta.classList.add("filtro")
+  // Mostrar los elementos que coinciden con el texto de búsqueda
+  questions.forEach((question) => {
+    const questionText = question.textContent.toLowerCase();
+    if (questionText.includes(searchTerm.toLowerCase())) {
+      question.style.display = "block";
     }
-  })
+  });
+
+  // Ocultar las respuestas de las preguntas ocultas
+  const answers = document.querySelectorAll(".accordion-item-bd");
+  answers.forEach((answer) => {
+    answer.style.display = "none";
+  });
+
+  // Mostrar las respuestas de las preguntas coincidentes
+  questions.forEach((question) => {
+    if (question.style.display === "block") {
+      question.nextElementSibling.style.display = "block";
+    }
+  });
 }
-})
 
+// Escuchar cambios en el campo de búsqueda
+document.querySelector("#search-input").addEventListener("input", () => {
+  // Obtener el texto ingresado en el campo de búsqueda
+  const searchTerm = document.querySelector("#search-input").value;
 
-
+  // Ejecutar la función de búsqueda
+  searchQuestions(searchTerm);
+});
     </script>
 </html>
