@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="./css/registrarse.css">
+</head>
+
+<body>
+  <div class="login-box">
+    <h2>Registro</h2>
+    <form id="loginForm" action="./index.html" method="post" onsubmit="return validarFormulario()">
+      <div class="user-box">
+        <input type="text" class="form-control form-control-user" name="nombre" id="nombre" value="">
+        <label>Nombre completo</label>
+      </div>
+      <div class="user-box">
+        <input type="email" class="form-control form-control-user" name="correo" id="correo" value="">
+        <label>Correo electrónico</label>
+      </div>
+      <div class="user-box">
+        <input type="text" class="form-control form-control-user" name="telefono" id="telefono" value="">
+        <label>Número de teléfono</label>
+      </div>
+      <div class="user-box">
+        <input type="password" class="form-control form-control-user" name="clave" id="contraseña" value="">
+        <label>Contraseña</label>
+      </div>
+      <div class="login-action">
+        <a href="./LOGIN.html" class="btn btn-secondary btn-block btn-user gradient-button">registrarse</a>
+      </div>
+    </form>
+  </div>
+  <script>"script.js"</script>
+</body>
+
+</html>

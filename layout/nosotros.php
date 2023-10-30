@@ -1,108 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="../images/favicon.png">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/us-style.css">
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap-grid.min.css">
-
-    <title>SOBRE NOSOTROS</title>
-
-</head>
-<body>
-    <header class="p-3 text-bg-dark">
-        <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="../index.html" class="Icon_Main d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <img src="../images/ROYALRHILLS.jpg" alt="">
-                </a>
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li> <!--Nosotros-->
-                        <a href="../Caracteristicas/NOSOTROS.html" class="nav-link px-2 text-white" data-bs-toggle="">
-                            SOBRE NOSOTROS
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown"><!--Vehiculos-->
-                        <a class="nav-link px-2 text-white dropdown-toggle" href="#" id="vehiculosDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Vehículos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="vehiculosDropdown">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    AUTOS
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    HIBRIDOS ELECTRICOS</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                SUV'S MINIVANS
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    PICK UP'S & COMERCIALES
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li> <!--Accesorios-->
-                        <a href="#" class="nav-link px-2 text-white">
-                            Accesorios
-                        </a>
-                    </li>
-                    <li><!--Franquicias-->
-                        <a href="#" class="nav-link px-2 text-white">
-                            Franquicias
-                        </a>
-                    </li>
-                    <li><!--Soporte-->
-                        <a href="#" class="nav-link px-2 text-white">
-                            Soporte técnico
-                        </a>
-                    </li>
-                    <li><!--Contacto-->
-                        <a href="#" class="nav-link px-2 text-white">
-                            Contacto
-                        </a>
-                    </li>
-                    <li><!--QA-->
-                        <a href="#" class="nav-link px-2 text-white">
-                            Preguntas Frecuentes
-                        </a>
-                    </li>
-                    <li><!--Carrito-->
-                        <a href="../caracteristicas/carrito.html" class="Icon_Cart d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                            <img src="../images/carrito.png">
-              <!--<span class="cart-counter"></span>-->
-                        </a>
-                    </li>
-                </ul>
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                    <i class="fas fa-search"></i>
-                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
-                aria-label="Search">
-                </form>
-                <div class="text-end">
-                    <button type="button" class="btn btn-outline-light me-2">
-                        Login
-                    </button>
-                    <button type="button" class="btn btn-warning">
-                        Sign-up
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-   
-    
+<?php require_once('Header.php') ?>
+  </div>
+</div>
+<main>
     <section id="about-us">
         <div class="row text-center">
             <h1>Bienvenidos a [Nombre de Tu Empresa]</h1>
@@ -217,23 +116,7 @@
         
         
     </section>
-
-    <footer>
-        <div class="container text-center">
-            <div class="row">
-                <h2>Contacto</h2>
-            </div>
-            <div class="row rows-cols-2">
-                <div class="col">
-                    <p>Si tienes alguna pregunta o consulta, no dudes en contactarnos:</p>
-                </div>
-                <div class="col">
-                    <p>Email: info@tuempresa.com</p>
-                    <p>Teléfono: +123 456 789</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+</main>
 </body>
 </html>
+<?php require ('Footer.php') ?>

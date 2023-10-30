@@ -1,4 +1,61 @@
-.nav li a:hover {
+
+
+  h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  form {
+    margin: 0 auto;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .submit-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+   style .nav li a:hover {
     background-color: #434343;
 }
 
@@ -140,4 +197,3 @@ h4
     color: #333;
     background-color: #333;
   }
-  
